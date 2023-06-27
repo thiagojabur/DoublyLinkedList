@@ -4,6 +4,38 @@ public class MainProject {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		System.out.println("Criando pilha");
+		Stack pilha = new Stack();
+		for (int i = 1; i <4; i++) 
+		 pilha.push(new DoublyNode(i));
+		
+		System.out.println(pilha);
+		System.out.println("Retirou da pilha: " + pilha.pop());
+		System.out.println(pilha);
+		System.out.println("Retirou da pilha: " + pilha.pop());
+		System.out.println(pilha);
+		System.out.println("Retirou da pilha: " + pilha.pop());
+		System.out.println(pilha);
+		System.out.println("Retirou da pilha: " + pilha.pop());
+
+		
+		System.out.println("Criando fila");
+		Queue fila = new Queue();
+		for (int i = 1; i <5; i++) 
+		 fila.enQueue(new DoublyNode(i));
+		
+		System.out.println(fila);
+		System.out.println("Retirou da fila: " + fila.deQueue());
+		System.out.println(fila);
+		System.out.println("Retirou da fila: " + fila.deQueue());
+		System.out.println(fila);
+		System.out.println("Retirou da fila: " + fila.deQueue());
+		System.out.println(fila);
+		System.out.println("Retirou da fila: " + fila.deQueue());
+		System.out.println(fila);
+		
+		/*
 		System.out.println("Comparando listas");
 		DoublyLinkedList listaDuplamenteEncadeada = new DoublyLinkedList();
 		SimpleLinkedList listaSimples = new SimpleLinkedList();
@@ -52,6 +84,7 @@ public class MainProject {
 		listaSimples.removeLast();
 		tempoFinal = System.currentTimeMillis();
 		System.out.printf("%.3f ms%n", (tempoFinal - tempoInicial) / 1000d);
+	    */
 	}
 
 }
